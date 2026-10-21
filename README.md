@@ -28,7 +28,7 @@ What this project aims to do:
 - [x] Repo structure and dependencies
 - [x] Colab notebook: install `geoai-py`, import helpers, set up dataset download
 
-<!-
+<!---
 - [ ] Fix dataset download (see known issue below)
 - [ ] Train the classifier (`train_image_classifier`)
 - [ ] Evaluate and plot (`evaluate_classifier`, `plot_training_history`,
@@ -37,7 +37,7 @@ What this project aims to do:
 - [ ] Refactor notebook code into `src/` + `scripts/`
 - [ ] Add tests in `tests/`
 - [ ] Inference on new imagery with geospatial export
--!>
+-->
 ## Notebook workflow
 
 `notebooks/google_colab.ipynb` is written to run in Google Colab:
@@ -52,14 +52,14 @@ What this project aims to do:
 Training, evaluation and plotting haven't been added yet; the helpers for them are
 already imported.
 
-<!-
+<!---
 > **Known issue:** the dataset URL in the notebook points at a Kaggle web page
 > (`...?select=EuroSAT_RGB`), not a direct file download, so `load_image_dataset`
 > fails with `FileNotFoundError`. Download the dataset with the Kaggle API (or
 > `kagglehub`) or use a direct archive link, then point `data_dir` at the extracted
 > `EuroSAT_RGB` folder (locally, put it under [`data/`](data/)).
 
--!>
+-->
 
 ## Setup
 
