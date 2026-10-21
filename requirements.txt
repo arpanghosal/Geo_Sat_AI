@@ -1,2 +1,28 @@
 # Project dependencies go here.
 
+torch
+torchvision
+
+numpy
+pandas
+
+matplotlib
+
+opencv-python
+
+scikit-learn
+
+jupyter
+
+tqdm
+
+
+geopandas
+
+shapely
+
+huggingface_hub
+
+datasets
+
+geoai-py

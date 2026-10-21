@@ -1,0 +1,27 @@
+Project log - running notes on what we've done in this repo.
+
+2026-10-21
+- Reviewed google_colab.ipynb (EuroSAT RGB land-cover classification with geoai-py).
+  - Notebook installs geoai-py, imports geoai.recognize helpers, downloads dataset, loads it.
+  - Training / evaluation / plotting steps not written yet.
+  - Known issue: dataset URL is a Kaggle web page, not a direct download, so
+    load_image_dataset fails with FileNotFoundError.
+- Rewrote README.md: project overview, notebook workflow, known issue,
+  Colab + local setup, repo structure, dependencies.
+- Noted: geoai-py is not yet in requirements.txt.
+- Created self.txt (this file) to log changes as we go.
+- Organized repo folders:
+  - Moved google_colab.ipynb -> notebooks/google_colab.ipynb.
+  - Added .gitkeep to empty folders (configs, data, docs, experiments, models,
+    results, scripts, tests) so they're kept in git.
+  - Made src/ a Python package (__init__.py in src/ and each subfolder).
+  - .gitignore: ignore contents of data/, results/, models/ but keep the folders;
+    ignore model weights (*.pt, *.pth, *.ckpt) and .DS_Store.
+- Added geoai-py to requirements.txt.
+- README.md: fixed links for the new notebook path, added Goals and
+  Status/roadmap sections, folder tree, link to self.txt.
+- Cleared all outputs from notebooks/google_colab.ipynb (81K -> 14K).
+- .gitignore: added build/packaging files, test/tool caches, .env/kaggle.json
+  secrets, editor files, logs/experiment-tracking dirs, and large data/model
+  files (*.zip, *.tif, *.npy, *.h5, *.onnx, *.safetensors, ...).
+- Committed: "Organize repo structure, document goals, move notebook to notebooks/".
