@@ -8,12 +8,19 @@ classifier on the [EuroSAT RGB](https://www.kaggle.com/datasets/waseemalastal/eu
 dataset (64×64 Sentinel-2 image patches across 10 land-cover classes, e.g. Forest,
 River, Residential, Industrial, AnnualCrop).
 
+
+
 ## Goals
 
 What this project aims to do:
 
 1. **Classify satellite image patches by land cover.** Train a CNN on EuroSAT RGB
    that labels a patch as one of 10 classes.
+
+commit 45134c9cb198974aed2b5e4aa8c4f0026b315a68 (HEAD -> main, origin/main)
+# Model shifted from basic cnn -> adding keras MobileNetV2 ImageNet backing
+
+
 2. **Evaluate it properly.** Report accuracy and per-class metrics, plot training
    curves and a confusion matrix, and show sample predictions.
 3. **Make it reproducible.** Move the notebook logic into reusable modules under
